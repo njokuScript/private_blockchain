@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Khay-EMMA/private_blockchain/issues"
   },
-  "homepage": "https://github.com/Khay-EMMA/private_blockchain#readme"
+  "homepage": "https://github.com/Khay-EMMA/private_blockchain#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
 }
