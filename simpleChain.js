@@ -1,3 +1,4 @@
+//class with constructor for block data
 class Block {
     constructor (data) {
         this.hash = "",
@@ -8,6 +9,22 @@ class Block {
     }
 }
 
-let blockInstance = new Block([1,2,3]);
+//class with constructor for a new blockchain
+class BlockChain {
+    constructor () {
+        this.chain = []
+    }
 
-console.log(blockInstance)
+    //function to add data to block
+    addBlock(newBlock) { 
+        this.chain.push(newBlock);
+    }
+}
+
+let blockchain = new BlockChain();
+
+blockchain.addBlock(new Block("first blockchain"))
+
+let result = blockchain.chain;
+
+console.log(result)
